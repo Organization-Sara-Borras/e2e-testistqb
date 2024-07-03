@@ -22,7 +22,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
-    projectId: "yahu7c",
+    projectId: "m5tdy6",
     baseUrl: "https://www.bootcampqa.com/",
     chromeWebSecurity: true
   },
