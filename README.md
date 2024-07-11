@@ -1,13 +1,13 @@
-# cypress-bootampqa
+# Cypress-Istqb-Online-Test
 
-<img src="https://bootcampqa.com/images/logo-black.png" alt="Bootcamp QA Logo">
 
-> Javascript, Cypress with Cucumber example project.
+> Javascript, Cypress with Cucumber project.
 
 ### 💻 Description
-E2e tests for https://bootcampqa.com
+E2e tests for https://sarabor09.github.io/ISTQB-Online-Test/
 
-JIRA PROJECT (ACCESS REQUIRED): https://mybootcampqa.atlassian.net/jira/software/projects/BOOTCAMPQA/boards/1 
+JIRA PROJECT (ACCESS REQUIRED): https://saboba9.atlassian.net/projects/IOT?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCases?projectId=10004
+
 - ## 💻 Pre-requisites
 
 1. Download and Install Node JS: https://nodejs.org/en/download
@@ -31,5 +31,10 @@ Execute node comand in a terminal: npm i
 
 
 ##  Run tests on CI with github Actions:
-1. Run tests on CI: https://github.com/Bootcamp-QA/cypress-bootcampqa/actions/workflows/main.yml
-2. See test results on Cypress Cloud: https://cloud.cypress.io/projects/438j27/runs
+1. Run tests on CI: https://github.com/Organization-Sara-Borras/e2e-testistqb/actions/workflows/main.yml
+2. See test results on Cypress Cloud: https://cloud.cypress.io/projects/yahu7c/runs
+
+
+## Autora 
+
+Sara Borras: https://www.linkedin.com/notifications/?filter=all

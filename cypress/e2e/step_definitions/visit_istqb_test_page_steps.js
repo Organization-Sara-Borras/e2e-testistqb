@@ -8,6 +8,6 @@ import {
 
     cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
 
-    cy.visit ("/");
+    cy.visit ("")
 
   });
