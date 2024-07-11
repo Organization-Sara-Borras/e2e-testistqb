@@ -22,7 +22,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
-    projectId: "m5tdy6",
+    projectId: "yahu7c",
     baseUrl: "https://sarabor09.github.io/ISTQB-Online-Test/",
     chromeWebSecurity: true
   },
