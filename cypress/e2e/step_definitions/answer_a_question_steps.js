@@ -4,14 +4,14 @@ import {
     Then,
   } from "@badeball/cypress-cucumber-preprocessor";
 
-const { find } = require("cypress/types/lodash");
+//const { find } = require("cypress/types/lodash");
 
 When ("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
 
     cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
     cy.get('[data-cy="question'+questionnumber+'"]').select(selectedAnswer);
 });
-
+/*
 When ("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
 
     cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
@@ -44,3 +44,4 @@ When ("When the user answer questions", (datatable)=>{
     
     
 });
+*/
