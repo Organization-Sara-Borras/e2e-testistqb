@@ -1,0 +1,35 @@
+const { find } = require("cypress/types/lodash");
+
+When ("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
+
+    cy.get('[data-cy="question'+questionsnumber+'"]').select(selectedAnswer),
+});
+
+When ("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
+
+    cy.get('[data-cy="question'+questionsnumber+'"]').find('input').check(selectedAnswer);
+
+});
+
+
+When ("the user press correct button on question {string}", (questionnumber)=>{
+
+    cy.get('[data-cy="button-correct-question'+questionsnumber+'"]').click();
+    
+});
+
+Then ("The user should see the message {string} on question {string}", (expectedMessage,questionnumber)=>{
+
+    cy.get('data-cy="messagequestion'+questionnumber+'"]').should('have.text',expectedMessage);
+
+});
+
+When ("When the user answer questions", (datatable)=>{
+
+    datatable.hashes().array.forEach(element => {
+    cy.get('[data-cy="question'+element.questionNumbers+'"]').select(element.selectedAnswer);
+
+    });
+    
+    
+});
