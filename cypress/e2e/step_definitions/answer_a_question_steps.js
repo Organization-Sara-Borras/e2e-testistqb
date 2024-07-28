@@ -7,12 +7,6 @@ import {
 
 //const { find } = require("cypress/types/lodash");
 
-Given("the student is on the ISTQB exam page", () => {
-
-    cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
-
-});
-
 When("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
 
     cy.get('[data-cy="'+selectedAnswer+'"]').check();

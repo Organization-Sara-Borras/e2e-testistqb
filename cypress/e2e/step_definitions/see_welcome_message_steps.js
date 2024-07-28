@@ -6,7 +6,6 @@ import {
 
 When ("the student enters the name {string}", (name) => {
 
-  cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
   cy.get('[data-cy="input-nombre-bienvenido"]').type(name);
 
 });
