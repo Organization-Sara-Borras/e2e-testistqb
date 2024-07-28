@@ -9,7 +9,7 @@ import {
 When ("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
 
     cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
-    cy.get('[data-cy="option'+selectedAnswer+'"]').check();
+    cy.get('[data-cy="'+selectedAnswer+'"]').check();
 });
 /*
 When ("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
