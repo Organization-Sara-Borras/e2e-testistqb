@@ -1,8 +1,7 @@
 import {
     Given,
     When,
-    Then,
-    And
+    Then
   } from "@badeball/cypress-cucumber-preprocessor";
 
 //const { find } = require("cypress/types/lodash");
