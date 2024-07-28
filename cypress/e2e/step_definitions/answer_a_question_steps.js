@@ -18,13 +18,13 @@ When("the user select answer {string} on question {string}", (selectedAnswer,que
     cy.get('[data-cy="'+selectedAnswer+'"]').check();
 
 });
-
+/*
 And("the user press correct button on question {string}", (questionnumber)=>{
 
-    //cy.get('[data-cy="button'+questionnumber+'"]').click();
+    cy.get('[data-cy="button'+questionnumber+'"]').click();
     
 });
-
+*/
 Then("the user should see the message {string} on question {string}", (expectedMessage,questionnumber)=>{
 
     cy.get('data-cy="answerText'+questionnumber+'"]').should('have.text',expectedMessage);
