@@ -15,14 +15,12 @@ When ("the user select answer {string} on question {string}", (selectedAnswer,qu
 
 When ("the user press correct button on question {string}", (questionnumber)=>{
 
-    cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
     cy.get('[data-cy="button'+questionnumber+'"]').click();
     
 });
 
 Then ("The user should see the message {string} on question {string}", (expectedMessage,questionnumber)=>{
 
-    cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
     cy.get('data-cy="answerText'+questionnumber+'"]').should('have.text',expectedMessage);
 
 });
