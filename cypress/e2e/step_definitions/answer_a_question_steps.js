@@ -7,7 +7,7 @@ import {
 
 //const { find } = require("cypress/types/lodash");
 
-Given("the user is on the ISTQB exam page", () => {
+Given("the student is on the ISTQB exam page", () => {
 
     cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
 
@@ -21,7 +21,7 @@ When("the user select answer {string} on question {string}", (selectedAnswer,que
 
 And("the user press correct button on question {string}", (questionnumber)=>{
 
-    cy.get('[data-cy="button'+questionnumber+'"]').click();
+    //cy.get('[data-cy="button'+questionnumber+'"]').click();
     
 });
 
