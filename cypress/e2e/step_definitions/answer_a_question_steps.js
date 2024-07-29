@@ -19,7 +19,7 @@ When("the user press correct button on question {string}", (questionnumber)=>{
 
 Then("the user should see the message {string} on question {string}", (expectedMessage,questionnumber)=>{
 
-    cy.get('data-cy="answerText'+questionnumber+'"]').should('have.text',expectedMessage);
+    cy.get('[data-cy="answerText'+questionnumber+'"]').should('have.text',expectedMessage);
 
 });
 /*
