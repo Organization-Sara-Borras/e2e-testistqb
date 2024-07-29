@@ -1,5 +1,4 @@
 import {
-    Given,
     When,
     Then
   } from "@badeball/cypress-cucumber-preprocessor";
@@ -12,7 +11,7 @@ When("the user select answer {string} on question {string}", (selectedAnswer,que
 
 });
 
-And("the user press correct button on question {string}", (questionnumber)=>{
+When("the user press correct button on question {string}", (questionnumber)=>{
 
     cy.get('[data-cy="button'+questionnumber+'"]').click();
     
