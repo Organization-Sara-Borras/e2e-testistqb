@@ -20,14 +20,6 @@ Examples:
 
 
 
-Scenario: Answer multiple question 2
-When the user answers questions:
-
-    |questionNumber | selectedAnswer   |
-    |1              | Respuesta B      |
-    |2              | Respuesta A      |
-
-
 
 /* en array sin comillas; hay que hacer 10 preguntas
 
