@@ -28,7 +28,7 @@ When ("When the user answer questions", (datatable)=>{
 
    
     datatable.hashes().forEach(element => {
-        cy.get('[data-cy="option'+element.questionnumber+'"]').select(element.selectedAnswer);
+        cy.get('[data-cy="'+element.questionnumber+'"]').select(element.selectedAnswer);
 
     });
     
