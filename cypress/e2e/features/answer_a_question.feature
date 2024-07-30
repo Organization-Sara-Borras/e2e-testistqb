@@ -16,7 +16,7 @@ Then the user should see the message <expectedMessage> on question <questionNumb
 Examples:
     | questionNumber     | selectedAnswer     | expectedMessage
     |"1"                 |"option2"           |"Wrong answer -1 points" |
-    |"1"                 |"opton1"            |"Correct answer 2 points"|
+    |"1"                 |"option1"            |"Correct answer 2 points"|
     |"1"                 !"option3"           |"Wrong answer -1 points" |
     |"1"                 |"--"                |"Wrong answer 0 points"  |
 
