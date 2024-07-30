@@ -22,16 +22,15 @@ Then("the user should see the message {string} on question {string}", (expectedM
     cy.get('[data-cy="answerText'+questionnumber+'"]').should('have.text',expectedMessage);
 
 });
-/*
+
 
 When ("When the user answer questions", (datatable)=>{
 
-    cy.visit("https://sarabor09.github.io/ISTQB-Online-Test/");
+   
     datatable.hashes().forEach(element => {
-    cy.get('[data-cy="question'+element.questionnumber+'"]').select(element.selectedAnswer);
+        cy.get('[data-cy="option'+element.questionnumber+'"]').select(element.selectedAnswer);
 
     });
     
     
 });
-*/
