@@ -22,18 +22,50 @@ Examples:
     |"1"                 |"--"                |"Wrong answer 0 points"  |
 
 
+    |"2"                 |"option1"           |"Wrong answer -1 points" |
+    |"2"                 |"option3"           |"Correct answer 2 points"|
+    |"2"                 !"option2"           |"Wrong answer -1 points" |
+    |"2"                 |"--"                |"Wrong answer 0 points"  |
 
-Scenario: Answer multiple question 2
-When the user answers questions:
+    
+    |"3"                 |"option1"           |"Wrong answer -1 points" |
+    |"3"                 |"option3"           |"Correct answer 2 points"|
+    |"3"                 !"option2"           |"Wrong answer -1 points" |
+    |"3"                 |"--"                |"Wrong answer 0 points"  |
 
-    |questionNumber | selectedAnswer   |
-    |1              | Respuesta B      |
-    |2              | Respuesta A      |
+    |"4"                 |"option1"           |"Wrong answer -1 points" |
+    |"4"                 |"option2"           |"Correct answer 2 points"|
+    |"4"                 !"option3"           |"Wrong answer -1 points" |
+    |"4"                 |"--"                |"Wrong answer 0 points"  |
 
+    |"5"                 |"option2"           |"Wrong answer -1 points" |
+    |"5"                 |"option1"           |"Correct answer 2 points"|
+    |"5"                 !"option3"           |"Wrong answer -1 points" |
+    |"5"                 |"--"                |"Wrong answer 0 points"  |
 
+    |"6"                 |"option2"           |"Wrong answer -1 points" |
+    |"6"                 |"option3"           |"Correct answer 2 points"|
+    |"6"                 !"option1"           |"Wrong answer -1 points" |
+    |"6"                 |"--"                |"Wrong answer 0 points"  |
 
-/* en array sin comillas; hay que hacer 10 preguntas
+    
+    |"7"                 |"option2"           |"Wrong answer -1 points" |
+    |"7"                 |"option3"           |"Correct answer 2 points"|
+    |"7"                 !"option1"           |"Wrong answer -1 points" |
+    |"7"                 |"--"                |"Wrong answer 0 points"  |
 
+    
+    |"8"                 |"option1"           |"Wrong answer -1 points" |
+    |"8"                 |"option2"           |"Correct answer 2 points"|
+    |"8"                 !"option3"           |"Wrong answer -1 points" |
+    |"8"                 |"--"                |"Wrong answer 0 points"  |
 
+    |"9"                 |"option2"           |"Wrong answer -1 points" |
+    |"9"                 |"option3"           |"Correct answer 2 points"|
+    |"9"                 !"option1"           |"Wrong answer -1 points" |
+    |"9"                 |"--"                |"Wrong answer 0 points"  |
 
-
+    |"10"                 |"option3"           |"Wrong answer -1 points" |
+    |"10"                 |"option2"           |"Correct answer 2 points"|
+    |"10"                 !"option1"           |"Wrong answer -1 points" |
+    |"10"                 |"--"                |"Wrong answer 0 points"  |
