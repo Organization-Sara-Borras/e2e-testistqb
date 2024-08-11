@@ -1,6 +1,14 @@
 Feature: Welcome the student
 
-Scenario: Enter a name with less than 10 characters
+Background:
+    Given the student is on the ISTQB exam page
+    
+Scenario: See welcome message
 
-Given the student is on the ISTQB exam page
-When the student enters the name "Reyes"
+When the student enters the name "Sara"
+And the student click Enter button
+Then the student should see the message "Welcome to ISTQB Online Test Sara"
+
+When the student enters the name " "
+And the student click Enter button
+Then the student should see the error message "This field is mandatory, length should be less than 10."

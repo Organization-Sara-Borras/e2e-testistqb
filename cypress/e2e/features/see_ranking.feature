@@ -1,9 +1,9 @@
-Feature: Answer a question
+Feature: See ranking
 
 Background:
     Given the student is on the ISTQB exam page
 
-Scenario: Complete exam and see final answer
+Scenario: See ranking
 
 When the student enters the name "Sara"
 And the student click Enter button
@@ -22,4 +22,5 @@ And the student answers questions:
     |10                |"option29"               |"Correct answer 2 points"     |
    
 And the student finishes the test and presses the button finish test
-Then the student final score is "-1"
+And the student clicks on show ranking button
+Then the student will see all the students ordered from highest to lowest

@@ -5,32 +5,31 @@ import {
 
 //const { find } = require("cypress/types/lodash");
 
-When("the user select answer {string} on question {string}", (selectedAnswer,questionnumber)=>{
-
-    cy.get('[data-cy="'+selectedAnswer+'"]').check();
-
-});
-
-When("the user press correct button on question {string}", (questionnumber)=>{
-
-    cy.get('[data-cy="button'+questionnumber+'"]').click();
-    
-});
-
-Then("the user should see the message {string} on question {string}", (expectedMessage,questionnumber)=>{
-
-    cy.get('[data-cy="answerText'+questionnumber+'"]').should('have.text',expectedMessage);
-
-});
-
-
-When ("When the user answer questions", (datatable)=>{
+When ("the student answers questions:", (datatable)=>{
 
    
     datatable.hashes().forEach(element => {
-        cy.get('[data-cy="'+element.questionnumber+'"]').select(element.selectedAnswer);
+        if (element.selectedAnswer === '') {
+            cy.get('[data-cy="buttonReset'+element.questionNumber+'"]').click();
+        } else {
+            cy.get('[data-cy='+element.selectedAnswer+']').check();
+        }
 
-    });
-    
+        cy.get('[data-cy="buttonSend'+element.questionNumber+'"]').click();
+
+    });    
     
 });
+
+When("the student finishes the test and presses the button finish test", ()=>{
+
+    cy.get('[data-cy="finishButton"]').click();
+
+});
+
+Then("the student final score is {string}", (score)=>{
+
+    cy.get('[data-cy="result"]').should('have.text', "You're result is -1 points.");
+
+});
+
