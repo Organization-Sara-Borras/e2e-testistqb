@@ -8,7 +8,7 @@ Scenario: Visit istqb test page
     When the student enters their correct name
     Then the student receives a welcome message
 
-Scenario 2: Visit istqb test page
+Scenario: Visit istqb test page
 
     Given the student visit istqb test page
     When the student leaves their name empty
